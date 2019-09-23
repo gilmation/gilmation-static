@@ -1,0 +1,113 @@
+/* Helpers */
+
+.visible-lg{
+  display: none !important;
+}
+.visible-md{
+  display: none !important;
+}
+.visible-sm{
+  display: block !important;
+}
+.hidden-md{
+  display: block !important;
+}
+.hidden-sm{
+  display: none !important;
+}
+.clearer {
+  clear:both;
+}
+.strong, .bold{
+  font-weight: bold;
+}
+.f-big{
+  font-size: 115%
+}
+.f-small{
+  font-size: 80%;
+}
+.fl-left{
+  float: left;
+}
+.fl-right{
+  float: right;
+}
+.table-wide{
+  width: 100%;
+}
+.icon, .icon:after {
+  height: 16px;
+  width: 16px;
+  float: left;
+  display: block;
+  text-indent: 0;
+  font-size: 100%;
+}
+.bl-arrow-top:after {
+  content: "\25b2 ";
+}
+
+#back-to-top {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 5%;
+  text-align: center;
+  padding: 10px;
+  background-color: #f4f4f4;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+  border-radius: 5px 5px 0 0;
+  -webkit-radius: 5px 5px 0 0;
+  -moz-border-radius: 5px 5px 0 0;
+  -o-border-radius: 5px 5px 0 0;
+  z-index: 9999;
+  a{
+    color: black;
+    display: block;
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  .bl-arrow-top {
+    float: right;
+    margin-left: 10px;
+  }
+}
+
+
+@media (min-width: 35.5em) {
+  .visible-sm{
+    display: none !important;
+  }
+}
+
+@media (min-width: 48em) {
+  .visible-md{
+    display: block !important;
+  }
+  .hidden-md{
+    display: none !important;
+  }
+  .hidden-sm{
+    display: block !important;
+  }
+  #back-to-top a {
+    text-indent: -9999px;
+    width: 16px;
+  }
+}
+
+@media (min-width: 64em) {
+  .visible-lg{
+    display: block !important;
+  }
+  .hidden-lg{
+    display: none !important;
+  }
+  .hidden-md{
+    display: block !important;
+  }
+}

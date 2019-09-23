@@ -1,0 +1,13 @@
+<header>
+  <div class="home-menu pure-menu pure-menu-horizontal pure-menu-fixed">
+    <div id="mobile-nav-link" class="hidden-lg">
+      <a id="mobile-nav-open" href="#nav">Menu</a>
+    </div>
+    <a class="pure-menu-heading" href="/"><img src="/images/confidas-logo-text-small.png" alt="Confidas People" title="Confidas People"></a>
+    <ul class="pure-menu-list visible-lg">
+      {% for item in site.data.menu %}
+      <li class="pure-menu-item{% if page.url contains item.url %} current{% endif %}"><a href="{{item.url}}" class="pure-menu-link">{{item.desc}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>
+</header>

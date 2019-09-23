@@ -1,0 +1,438 @@
+//= require vendor/base-min.css
+//= require vendor/buttons-min.css
+//= require vendor/forms-min.css
+//= require vendor/tables-min.css
+//= require vendor/menus-min.css
+//= require vendor/grids-core-min.css
+//= require vendor/grids-units-min.css
+//= require vendor/grids-responsive-min.css
+//= require vendor/jquery.horizontal-slide-mobile-menu.v0.0.1.min.sass
+//= require base.scss
+
+@import "font-awesome-sprockets";
+@import "font-awesome";
+
+$c-black: #333;
+$c-anchor: #60B0D6;
+$c-gold-light: #dabd3a;
+$c-gold-med: #CCAE28;
+$c-gold-dark: #795F11;
+$c-gray-light: #c5c5c5;
+$c-gray-med: #aaa;
+$c-gray-dark: #616161;
+
+$c-confidas-green: #41ad49;
+$c-confidas-blue: #29275b;
+$c-confidas-black: #231f20;
+
+/* typography */
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+html, button, input, select, textarea,
+.pure-g [class *= "pure-u"] {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pure-g {
+  letter-spacing: normal;
+}
+
+body {
+  font-size: 14px;
+  line-height: 1.5;
+  min-height: 100%;
+  margin: 0;
+  position: relative;
+  color: $c-confidas-black;
+}
+
+header {
+  .home-menu {
+    padding: 0;
+    text-align: center;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
+    background: $c-gray-light;
+    &.pure-menu-fixed {
+      border-bottom: none;
+      z-index: 4;
+    }
+    ul {
+      float: right;
+    }
+    li a {
+      color: $c-confidas-black;
+      padding-top: 38px;
+      padding-bottom: 38px;
+    }
+    li.current a {
+      color: $c-confidas-green;
+    }
+    li a:hover {
+      color: $c-confidas-green;
+      background: $c-gray-light;
+      padding-bottom: 33px;
+      border-bottom: solid 5px $c-confidas-green;
+    }
+  }
+  #mobile-nav-link{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+  }
+}
+
+#container {
+  background-color: white;
+  .content-header{
+    height: 90px;
+  }
+}
+
+.page-content{
+  margin: 0 auto;
+  padding: 0 1em;
+  .block{
+    padding: 0;
+  }
+  &:last-child{
+    //margin-bottom: 1em;
+  }
+  table{
+    margin-bottom: 1em;
+  }
+}
+
+.pure-g.page-content.bottom-of-page-padding {
+  .pure-u-1 {
+    padding-bottom: 60px;
+  }
+}
+
+footer{
+  color: white;
+  height: 150px;
+  background: $c-confidas-blue;
+  .footer-links {
+    padding-top: 50px;
+    text-align: center;
+  }
+  .gilmation-link {
+    padding-top: 50px;
+    margin-right: 10px;
+  }
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+  font-size: 2.2em;
+  line-height: 1.2em;
+  font-weight: normal;
+  color: $c-black;
+  margin-bottom: 0.25em;
+}
+
+.home-container {
+  min-height: 449px;
+  background-size: cover;
+  z-index: -1;
+  background-image: url(/images/edinburgh-home-vs.jpg);
+  .page-content {
+    &:first-child {
+      padding-top: 25px;
+    }
+  }
+}
+
+#home-quote {
+  text-align: center;
+  i {
+    font-size: 0.5em;
+    pading-bottom: 5px;
+    vertical-align: super;
+  }
+}
+
+.testimonial-quote {
+  i {
+    font-size: 0.7em;
+    pading-bottom: 5px;
+    vertical-align: super;
+    color: $c-confidas-green;
+  }
+}
+
+#text-home {
+  text-align:center;
+}
+
+#engage-home {
+  text-align: center;
+}
+
+.confidas-person {
+  margin-bottom: 15px;
+  margin-top: 25px;
+  h3 {
+    margin-top: 5px;
+  }
+  .pure-img {
+    border-radius: 4px;
+  }
+  ul {
+    margin-top: 5px;
+    li {
+      padding: 0;
+      margin-bottom: 5px;
+      i.fa-li {
+        color: $c-confidas-green;
+      }
+    }
+  }
+}
+
+.confidas-person.first {
+  margin-top: 0px;
+}
+
+a {
+  color: $c-confidas-green;
+  text-decoration: none;
+}
+
+a:hover{
+  color: $c-confidas-green;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected {
+  background-color: $c-confidas-green;
+  border-radius: 5px;
+}
+
+a.pure-button-primary:hover {
+  color: $c-confidas-blue;
+}
+
+.psychometric-testing {
+  padding: 0;
+  ul {
+    padding: 0;
+    li {
+      padding: 0;
+      margin-bottom: 15px;
+      span {
+        font-weight: bold;
+      }
+      i.fa-li {
+        color: $c-confidas-green;
+      }
+      i.fa-caret-right {
+        padding: 0 10px 0 10px;
+      }
+    }
+  }
+}
+
+ul.process {
+  margin-top: 0;
+  li {
+    padding: 0;
+    margin-bottom: 5px;
+    i.fa-li {
+      color: $c-confidas-green;
+    }
+  }
+}
+
+.teams {
+  p {
+    b {
+      color: $c-confidas-green;
+    }
+  }
+}
+
+/*
+ * -- TABLET (AND UP) MEDIA QUERIES --
+ * On tablets and other medium-sized devices, we want to customize some
+ * of the mobile styles.
+ */
+@media (min-width: 32em) {
+  #container {
+    //padding-bottom: 100px;
+    background-color: white;
+    .content-header{
+      height: 100px;
+    }
+  }
+
+  #engage-home {
+    margin-top: 30px;
+  }
+
+  .page-content{
+    .block{
+      padding: 0 1em;
+      &:first-child{
+        padding-left: 0;
+      }
+    }
+  }
+  .home-container {
+      min-height: 1070px;
+      background-image: url(/images/edinburgh-home-lg.jpg);
+    .page-content {
+      &:first-child {
+        padding-top: 75px;
+      }
+    }
+  }
+  .confidas-person {
+    margin-bottom: 15px;
+    margin-top: 25px;
+    h3 {
+      margin-top: 5px;
+    }
+    .pure-img {
+      border-radius: 4px;
+    }
+    ul {
+      margin-top: 10px;
+      li {
+        padding: 0;
+        margin-bottom: 20px;
+        i.fa-li {
+          color: $c-confidas-green;
+        }
+      }
+    }
+  }
+
+  .confidas-person.first {
+    margin-top: 0px;
+  }
+}
+
+/*
+ * -- DESKTOP (AND UP) MEDIA QUERIES --
+ * On desktops and other large devices, we want to over-ride some
+ * of the mobile and tablet styles.
+ */
+@media (min-width: 64em) {
+
+  h2 {
+    margin-bottom: 0.83em;
+  }
+
+  body {
+    font-size: 16px;
+  }
+
+  header {
+    .home-menu {
+      text-align: left;
+      .pure-menu-heading{
+        float: left;
+        padding: 10px 0 5px 5px;
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+  }
+  .pure-g.page-content.bottom-of-page-padding {
+    .pure-u-1 {
+      padding-bottom: 220px;
+    }
+  }
+  #container{
+    padding-bottom: 0px;
+    .content-header{
+      height: 100px;
+    }
+    .content-wrapper{
+      position: absolute;
+    }
+    .content-wrapper .content .content-text-1{
+      max-width: 1024px;
+    }
+  }
+  .page-content{
+    max-width: 1024px;
+  }
+  body{
+
+  }
+  footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 150px;
+    background: $c-confidas-blue;
+  }
+}
+
+/*
+ * -- DESKTOP LG (AND UP) MEDIA QUERIES --
+ * On desktops and other large devices, we want to over-ride some
+ * of the mobile and tablet styles.
+ */
+@media (min-width: 80em) {
+  #container {
+    padding-bottom: 0px;
+  }
+  header {
+    .home-menu {
+
+    }
+  }
+  body{
+
+  }
+  footer{
+    height: 150px;
+  }
+}
+
+/*
+ * -- DESKTOP XL (AND UP) MEDIA QUERIES --
+ * On desktops and other large devices, we want to over-ride some
+ * of the mobile and tablet styles.
+ */
+@media (min-width: 120em) {
+  #container {
+    padding-bottom: 0px;
+    .content-wrapper .content .content-text-1{
+      max-width: 1224px;
+      padding: 3% 0;
+    }
+  }
+  .page-content{
+    max-width: 2048px;
+  }
+  body{
+
+  }
+  footer{
+    height: 150px;
+  }
+}

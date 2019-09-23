@@ -1,0 +1,13 @@
+name: Confidas People
+icon_name: favicon.ico
+ga_profile_id: UA-101018981-1
+markdown: redcarpet
+highlighter:
+exclude: [ doc, Gemfile, Gemfile.lock, upload_s3.sh, README.md ]
+gems:
+- jekyll-assets
+- jekyll-sitemap
+compress:
+  css:  sass
+  js:   uglifier
+url: https://confidas-people.co.uk
