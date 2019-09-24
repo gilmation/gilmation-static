@@ -6,6 +6,9 @@
 .visible-md{
   display: none !important;
 }
+.visible-bt-sm-md{
+  display: none !important;
+}
 .visible-sm{
   display: block !important;
 }
@@ -82,6 +85,9 @@
   .visible-sm{
     display: none !important;
   }
+  .hidden-sm{
+    display: block !important;
+  }
 }
 
 @media (min-width: 48em) {
@@ -90,9 +96,6 @@
   }
   .hidden-md{
     display: none !important;
-  }
-  .hidden-sm{
-    display: block !important;
   }
   #back-to-top a {
     text-indent: -9999px;

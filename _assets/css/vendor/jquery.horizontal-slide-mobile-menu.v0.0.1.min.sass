@@ -2,9 +2,8 @@ $levels: 1
 $md-width: 1023px
 $c-black: #231f20
 $c-gray-light: #c5c5c5
-$c-confidas-green: #41ad49
-$c-confidas-blue: #29275b
-$c-confidas-black: #231f20
+$c-gilmation-red: rgb(172, 23, 27)
+$c-gilmation-red-light: rgba(172, 23, 27, .8)
 
 =active-level-x
   @for $i from 1 through $levels
@@ -33,7 +32,7 @@ $c-confidas-black: #231f20
     overflow: hidden
     transform: translate3d(-100%, 0, 0)
     #nav-back-link
-      background-color: $c-gray-light
+      background-color: white
       padding: 12px  15px
       text-align: left
       a
@@ -56,7 +55,7 @@ $c-confidas-black: #231f20
           display: block
           height: $height
           width: $width
-          background-color: $c-gray-light
+          background-color: white
           transition: all 0.2s ease-out
         &:after
           transform: rotate(45deg)
@@ -72,23 +71,23 @@ $c-confidas-black: #231f20
     li
       background-image: none
       border-top: solid 1px #bfc1c3
-      background-color: $c-gray-light
+      background-color: white
       margin: 0
       width: auto
       list-style: none
       &:hover
-        background-color: $c-gray-light
+        background-color: white
         & a
-          color: $c-confidas-green
+          color: $c-gilmation-red-light
       a
         display: block
         padding: 15px 0 15px 15px
         color: $c-black
         text-decoration: none
       &.current
-        background: $c-gray-light
+        background: white
         a
-          color: $c-confidas-green
+          color: $c-gilmation-red
 
     > ul ul
       position: absolute

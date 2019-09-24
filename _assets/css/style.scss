@@ -21,9 +21,21 @@ $c-gray-light: #c5c5c5;
 $c-gray-med: #aaa;
 $c-gray-dark: #616161;
 
-$c-confidas-green: #41ad49;
-$c-confidas-blue: #29275b;
-$c-confidas-black: #231f20;
+$c-gilmation-black: #231f20;
+
+$c-h: #A8B8C0;
+
+$footer: #E2E2EC;
+$footer-background: #A8B8C0;
+
+$header-background: rgb(226, 226, 236);
+$header-border-bottom: rgba(0, 0, 0, 0.1);
+
+$nav-link: rgb(1, 41, 103);
+
+$c-gilmation-red: rgb(172, 23, 27);
+$c-gilmation-red-light: rgba(172, 23, 27, .8);
+
 
 /* typography */
 
@@ -40,7 +52,7 @@ html {
 
 html, button, input, select, textarea,
 .pure-g [class *= "pure-u"] {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .pure-g {
@@ -53,15 +65,15 @@ body {
   min-height: 100%;
   margin: 0;
   position: relative;
-  color: $c-confidas-black;
+  color: $c-gilmation-black;
+  background-color: #FFF;
 }
 
 header {
   .home-menu {
     padding: 0;
     text-align: center;
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.10);
-    background: $c-gray-light;
+    background-color: white;
     &.pure-menu-fixed {
       border-bottom: none;
       z-index: 4;
@@ -70,18 +82,19 @@ header {
       float: right;
     }
     li a {
-      color: $c-confidas-black;
+      color: rgb(1, 41, 103);
+      text-transform: uppercase;
+      font-weight: 400;
+      letter-spacing: 0.15em;
       padding-top: 38px;
       padding-bottom: 38px;
     }
     li.current a {
-      color: $c-confidas-green;
+      color: $c-gilmation-red;
     }
     li a:hover {
-      color: $c-confidas-green;
-      background: $c-gray-light;
-      padding-bottom: 33px;
-      border-bottom: solid 5px $c-confidas-green;
+      color: $c-gilmation-red-light;
+      background-color: #FFF;
     }
   }
   #mobile-nav-link{
@@ -89,6 +102,14 @@ header {
     top: 15px;
     left: 15px;
   }
+}
+
+.big-logo {
+  max-width: 380px;
+}
+
+.intro {
+  margin-bottom: 2em;
 }
 
 #container {
@@ -121,7 +142,7 @@ header {
 footer{
   color: white;
   height: 150px;
-  background: $c-confidas-blue;
+  background: $footer-background;
   .footer-links {
     padding-top: 50px;
     text-align: center;
@@ -137,137 +158,130 @@ p {
 }
 
 h1,h2,h3,h4,h5,h6{
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Roboto Slab", serif;
 }
 
 h2 {
-  font-size: 2.2em;
-  line-height: 1.2em;
+  margin: 0 0 1em 0;
+  padding: 0.285em 0 0.285em 0;
   font-weight: normal;
-  color: $c-black;
-  margin-bottom: 0.25em;
+  font-size: 1.5em;
+  color: $c-h;
+  border-bottom: 2px solid $c-h;
+  text-transform: capitalize;
+  line-height: 1.2em;
 }
 
-.home-container {
-  min-height: 449px;
-  background-size: cover;
-  z-index: -1;
-  background-image: url(/images/edinburgh-home-vs.jpg);
-  .page-content {
-    &:first-child {
-      padding-top: 25px;
-    }
-  }
+h3 {
+  margin: 0 0 0.3em 0;
+  padding: 0.285em 0 0.285em 0;
+  font-weight: normal;
+  font-size: 1.2em;
+  color: $c-h;
+  border-bottom: none;
+  line-height: 1.2em;
 }
 
-#home-quote {
-  text-align: center;
-  i {
-    font-size: 0.5em;
-    pading-bottom: 5px;
-    vertical-align: super;
-  }
+h4 {
+  margin: 1em 0 0 0;
+  padding: 0.285em 0 0.285em 0;
+  font-weight: normal;
+  font-size: 1em;
+  color: $c-h;
+  border-bottom: none;
+  text-transform: capitalize;
+  line-height: 0.8em;
 }
 
-.testimonial-quote {
-  i {
-    font-size: 0.7em;
-    pading-bottom: 5px;
-    vertical-align: super;
-    color: $c-confidas-green;
-  }
-}
-
-#text-home {
-  text-align:center;
+h4.no-margin {
+  margin: 0;
 }
 
 #engage-home {
   text-align: center;
 }
 
-.confidas-person {
-  margin-bottom: 15px;
-  margin-top: 25px;
-  h3 {
-    margin-top: 5px;
-  }
-  .pure-img {
-    border-radius: 4px;
-  }
-  ul {
-    margin-top: 5px;
-    li {
-      padding: 0;
-      margin-bottom: 5px;
-      i.fa-li {
-        color: $c-confidas-green;
-      }
-    }
-  }
+/* use the best possible ampersand */
+span.amp {
+  font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif;
+  font-weight: normal;
+  font-style: italic;
+  font-size: 1.2em;
+  color: #766557;
 }
 
-.confidas-person.first {
-  margin-top: 0px;
+span.drop {
+  color: #A8B8C0;
+  color: rgb(168, 184, 192);
+  display:inline;
+  float:left;
+  font-size:3em;
+  line-height:0.5em;
+  margin:0;
+  padding:0.25em 0.08em 0 0;
+  text-transform:capitalize;
 }
 
-a {
-  color: $c-confidas-green;
-  text-decoration: none;
-}
+/* @group Links */
 
-a:hover{
-  color: $c-confidas-green;
+a:link, a:visited {
   font-weight: bold;
   text-decoration: none;
+  outline: none;
+  color: #012967;
+  color: rgb(1, 41, 103);
+}
+
+a:hover {
+  color: $c-gilmation-red-light;
+}
+
+#nav li a:hover  {
+  color: $c-gilmation-red-light;
+}
+
+div.links {
+  text-transform: capitalize;
+}
+
+div.links h3 {
+  margin-bottom: 0.3em;
+  line-height: 0.8em;
+}
+
+/* @end Links */
+
+label em {
+  color: rgb(0, 44, 27);
+}
+
+#flash-message-ok {
+  color: #07672A;
+  color: rgb(7, 103, 42);
+  margin-bottom: 1em;
+}
+
+#flash-message-oops {
+  color: $c-gilmation-red;
+  margin-bottom: 1em;
+}
+
+#flash-message-timeout {
+  color: $c-gilmation-red;
+  margin-bottom: 1em;
 }
 
 .pure-button-primary, .pure-button-selected, a.pure-button-primary, a.pure-button-selected {
-  background-color: $c-confidas-green;
+  background-color: $c-gilmation-red-light;
   border-radius: 5px;
 }
 
 a.pure-button-primary:hover {
-  color: $c-confidas-blue;
+  color: $c-gilmation-red;
 }
 
-.psychometric-testing {
-  padding: 0;
-  ul {
-    padding: 0;
-    li {
-      padding: 0;
-      margin-bottom: 15px;
-      span {
-        font-weight: bold;
-      }
-      i.fa-li {
-        color: $c-confidas-green;
-      }
-      i.fa-caret-right {
-        padding: 0 10px 0 10px;
-      }
-    }
-  }
-}
-
-ul.process {
-  margin-top: 0;
-  li {
-    padding: 0;
-    margin-bottom: 5px;
-    i.fa-li {
-      color: $c-confidas-green;
-    }
-  }
-}
-
-.teams {
-  p {
-    b {
-      color: $c-confidas-green;
-    }
-  }
+.work {
+  margin-top: 2em;
 }
 
 /*
@@ -277,7 +291,6 @@ ul.process {
  */
 @media (min-width: 32em) {
   #container {
-    //padding-bottom: 100px;
     background-color: white;
     .content-header{
       height: 100px;
@@ -295,39 +308,6 @@ ul.process {
         padding-left: 0;
       }
     }
-  }
-  .home-container {
-      min-height: 1070px;
-      background-image: url(/images/edinburgh-home-lg.jpg);
-    .page-content {
-      &:first-child {
-        padding-top: 75px;
-      }
-    }
-  }
-  .confidas-person {
-    margin-bottom: 15px;
-    margin-top: 25px;
-    h3 {
-      margin-top: 5px;
-    }
-    .pure-img {
-      border-radius: 4px;
-    }
-    ul {
-      margin-top: 10px;
-      li {
-        padding: 0;
-        margin-bottom: 20px;
-        i.fa-li {
-          color: $c-confidas-green;
-        }
-      }
-    }
-  }
-
-  .confidas-person.first {
-    margin-top: 0px;
   }
 }
 
@@ -353,7 +333,7 @@ ul.process {
         float: left;
         padding: 10px 0 5px 5px;
         img{
-          max-width: 100%;
+          max-width: 400px;
         }
       }
     }
@@ -387,7 +367,7 @@ ul.process {
     left: 0;
     right: 0;
     height: 150px;
-    background: $c-confidas-blue;
+    background: $footer-background;
   }
 }
 

@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Gilmation - Our Services
-og_title: "Gilmation - Our Services"
+title: Gilmation - Services
+og_title: "Gilmation - Services"
 og_url: https://gilmation.com
 og_description: "Gilmation - Our Services"
 og_image: https://gilmation.com/images/gilmation-logo-no-phrase.png
@@ -9,7 +9,7 @@ og_image: https://gilmation.com/images/gilmation-logo-no-phrase.png
 <div class="content-header"></div>
 <div class="pure-g page-content">
   <div class="pure-u-1 block">
-    <h2>{{ page.title }}</h2>
+    <h2>Services</h2>
   </div>
 </div>
 <div class="pure-g page-content">
@@ -21,11 +21,11 @@ og_image: https://gilmation.com/images/gilmation-logo-no-phrase.png
 </div>
 {% for item in site.data.services %}
   <div class="pure-g page-content">
-    <div class="pure-u-sm-1-2 pure-u-lg-1-2 service">
+    <div class="pure-u-sm-1-2 pure-u-lg-1-2 block service">
       <h3>{{ item.service1 }}</h3>
       <p>{{ item.desc1 }}</p>
     </div>
-    <div class="pure-u-sm-1-2 pure-u-lg-1-2 service">
+    <div class="pure-u-sm-1-2 pure-u-lg-1-2 block service">
       <h3>{{ item.service2 }}</h3>
       <p>{{ item.desc2 }}</p>
     </div>

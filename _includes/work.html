@@ -1,0 +1,26 @@
+{% for item in site.data.work %}
+<div class="pure-g page-content">
+  <div class="pure-u-sm-1-2 pure-u-lg-1-2 work">
+    <div class="pure-g">
+      <div class="pure-u-sm-1-2 pure-u-lg-1-2 block">
+        <h3>{{ item.client1 }}</h3>
+        <p>{{ item.desc1 }}</p>
+      </div>
+      <div class="pure-u-sm-1-2 pure-u-lg-1-2 block">
+        <img src="/images/{{ item.image1 }}" alt="{{ item.client1 }}" title="{{ item.client1 }}" class="pure-img">
+      </div>
+    </div>
+  </div>
+  <div class="pure-u-sm-1-2 pure-u-lg-1-2 work">
+    <div class="pure-g">
+      <div class="pure-u-sm-1-2 pure-u-lg-1-2 block">
+        <h3>{{ item.client2 }}</h3>
+        <p>{{ item.desc2 }}</p>
+      </div>
+      <div class="pure-u-sm-1-2 pure-u-lg-1-2 block">
+        <img src="/images/{{ item.image2 }}" alt="{{ item.client2 }}" title="{{ item.client2 }}" class="pure-img">
+      </div>
+    </div>
+  </div>
+</div>
+{% endfor %}
