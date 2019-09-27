@@ -24,7 +24,7 @@ cd _site
 echo "Changed to [_site] to execute the AWS S3 sync"
 
 # Sync with the server
-aws s3 sync . s3://gilmation.com --include "*" --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers
+aws s3 sync . s3://gilmation-static --include "*" --grants read=uri=http://acs.amazonaws.com/groups/global/AllUsers --region eu-west-1
 
 echo "Moving back to [$HERE]"
 cd $HERE
