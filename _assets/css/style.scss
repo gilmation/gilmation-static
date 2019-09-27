@@ -108,10 +108,6 @@ header {
   max-width: 380px;
 }
 
-.intro {
-  margin-bottom: 2em;
-}
-
 #container {
   background-color: white;
   .content-header{
@@ -201,6 +197,14 @@ h4.no-margin {
   text-align: center;
 }
 
+.intro {
+  margin-bottom: 2em;
+  img {
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  }
+}
 /* use the best possible ampersand */
 span.amp {
   font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif;
@@ -307,6 +311,17 @@ a.pure-button-primary:hover {
       &:first-child{
         padding-left: 0;
       }
+    }
+  }
+  .about {
+    img {
+      padding: 10px 0px 0px 20px;
+    }
+  }
+
+  .work-image {
+    img {
+      padding: 10px 0px 0px 5px;
     }
   }
 }

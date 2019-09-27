@@ -42,7 +42,7 @@ og_image: https://gilmation.com/images/gilmation-logo-no-phrase.png
         After moving back to Scotland in July 2015, he is now actively focused on Gilmation's existing clients and developing new opportunities.
         When not working with clients or on his businesses, Hugh dedicates his time to his family, spending time outdoors and sports - which helps with the continual struggle to stay fit !</p>
       </div>
-      <div class="pure-u-sm-1-2 pure-u-lg-1-2 block">
+      <div class="pure-u-sm-1-2 pure-u-lg-1-2 block about">
         <img src="/images/hugh.jpg" alt="Hugh" title="Hugh" class="pure-img">
       </div>
     </div>
@@ -66,7 +66,7 @@ og_image: https://gilmation.com/images/gilmation-logo-no-phrase.png
         <p>In the summer of 2011 Paco left Excentia and joined Gilmation where he works daily with a number of different languages developing and maintaining diverse web and e-commerce solutions.
         When he is not dragging himself along on his bicycle in the mountains in the middle of nowhere, he enjoys quiet time at home with his family and often finds himself getting distracted with gardening or by occasional do-it-yourself activities.</p>
       </div>
-      <div class="pure-u-sm-1-2 pure-u-lg-1-2 block">
+      <div class="pure-u-sm-1-2 pure-u-lg-1-2 block about">
         <img src="/images/paco.jpg" alt="Paco" title="Paco" class="pure-img">
       </div>
     </div>
@@ -95,7 +95,7 @@ og_image: https://gilmation.com/images/gilmation-logo-no-phrase.png
         <p>In Autumn 2011 Yon decided to take a sabbatical from Ikastolen Elkartea to join the Gilmation team where he has principally been developing e-commerce solutions. Yon also spends part of his time consulting with the team at Ikastolen Elkartea on their EKI project.
         When Yon is not working he enjoys spending time with his young family...and he still harbours hopes of being able to (one day) dust down his Stratocaster.</p>
       </div>
-      <div class="pure-u-sm-1-2 pure-u-lg-1-2 block">
+      <div class="pure-u-sm-1-2 pure-u-lg-1-2 block about">
         <img src="/images/yon.jpg" alt="Yon" title="Yon" class="pure-img">
       </div>
     </div>
@@ -118,7 +118,7 @@ og_image: https://gilmation.com/images/gilmation-logo-no-phrase.png
         When she's not working Paloma loves to spend time with her family and friends; and if she's still got any energy left enjoys taking part in team sports.
         It could also be said that she is a big fan of the cinema and of reading but that currently these things don't get much of her attention!</p>
       </div>
-      <div class="pure-u-sm-1-2 pure-u-lg-1-2 block">
+      <div class="pure-u-sm-1-2 pure-u-lg-1-2 block about">
         <img src="/images/paloma.jpg" alt="Paloma" title="Paloma" class="pure-img">
       </div>
     </div>
