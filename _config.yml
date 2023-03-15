@@ -4,10 +4,11 @@ ga_profile_id: UA-101018981-1
 markdown: redcarpet
 highlighter:
 exclude: [ doc, Gemfile, Gemfile.lock, upload_s3.sh, README.md ]
-gems:
-- jekyll-assets
-- jekyll-sitemap
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
 compress:
   css:  sass
   js:   uglifier
-url: https://confidas-people.co.uk
+url: https://gilmation.com
