@@ -1,10 +1,3 @@
-#= require vendor/jquery-1.11.0.min.js
-#= require vendor/modernizr.custom.75803.js
-#= require vendor/matchMedia.js
-#= require vendor/matchMedia.addListener.js
-#= require vendor/enquire.min.v2.1.0.js
-#= require vendor/jquery.horizontal-slide-mobile-menu.v0.0.2.min.js
-
 jQuery(document).ready(function($) {
   // Header & Back to top
   if($('#back-to-top').length > 0){

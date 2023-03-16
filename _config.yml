@@ -1,14 +1,12 @@
 name: Gilmation Static Website
 icon_name: favicon.ico
 ga_profile_id: UA-101018981-1
-markdown: redcarpet
 highlighter:
 exclude: [ doc, Gemfile, Gemfile.lock, upload_s3.sh, README.md ]
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
-compress:
-  css:  sass
-  js:   uglifier
+sass:
+  style: compact
 url: https://gilmation.com

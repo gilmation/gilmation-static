@@ -1,16 +1,15 @@
-//= require vendor/base-min.css
-//= require vendor/buttons-min.css
-//= require vendor/forms-min.css
-//= require vendor/tables-min.css
-//= require vendor/menus-min.css
-//= require vendor/grids-core-min.css
-//= require vendor/grids-units-min.css
-//= require vendor/grids-responsive-min.css
-//= require vendor/jquery.horizontal-slide-mobile-menu.v0.0.1.min.sass
-//= require base.scss
-
-@import "font-awesome-sprockets";
-@import "font-awesome";
+---
+---
+@import "base-min";
+@import "buttons-min";
+@import "forms-min";
+@import "tables-min";
+@import "menus-min";
+@import "grids-core-min";
+@import "grids-units-min";
+@import "grids-responsive-min";
+@import "jquery.horizontal-slide-mobile-menu.v0.0.1.min";
+@import "base";
 
 $c-black: #333;
 $c-anchor: #60B0D6;

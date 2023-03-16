@@ -20,7 +20,7 @@ og_image: https://gilmation.com/images/gilmation-logo-no-phrase.png
 </div>
 <div class="pure-g page-content">
   <div class="pure-u-1 pure-u-lg-1-3 block">
-      <p><a class="button-xlarge pure-button pure-button-primary" href="mailto:hello@gilmation.com?subject=Interest in Gilmation&body=Hello%0D%0A%0D%0AFollowing a review of the information on the website, I am interested in learning more about the servcies offered by Gilmation.%0D%0A%0D%0AMy specific interest is in Software Development / Ecommerce / Project Management / Process Analysis (delete as appropriate).%0D%0A%0D%0APlease could you contact me to discuss further.  My contact details and specific information required is noted below (add as appropriate).">Engage With Us</a>
+      <p><a class="button-xlarge pure-button pure-button-primary" href="mailto:hello@gilmation.com?subject=Interest in Gilmation&body=Hello%0D%0A%0D%0AFollowing a review of the information on the website, I am interested in learning more about the servcies offered by Gilmation.%0D%0A%0D%0AMy specific interest is in Software Development / Ecommerce / Project Management / Process Analysis (delete as appropriate).%0D%0A%0D%0APlease could you contact me to discuss further.  My contact details and specific information required is noted below (add as appropriate).">Engage With Us</a></p>
   </div>
 </div>
 <div class="pure-g page-content bottom-of-page-padding">

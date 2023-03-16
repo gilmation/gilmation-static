@@ -5,10 +5,8 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'jekyll'
+gem 'jekyll', '~>4.3.2'
 
-gem 'redcarpet'
-gem 'sass'
 gem 'font-awesome-sass'
 gem 'uglifier'
 
