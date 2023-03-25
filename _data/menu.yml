@@ -1,9 +1,3 @@
-- url: /services/
-  desc: "Services"
-
-- url: /work/
-  desc: "Work"
-
 - url: /about/
   desc: "About"
 

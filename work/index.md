@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Gilmation - Work
+sitemap: false
 og_title: "Gilmation - Work"
 og_url: https://gilmation.com
 og_description: "Gilmation - Our Work"

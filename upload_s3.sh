@@ -5,7 +5,7 @@
 
 BRANCH="$(git symbolic-ref -q HEAD)"
 
-if [[ $BRANCH != *master* ]]; then
+if [[ $BRANCH != *main* ]]; then
   echo "Usage: You MUST be in the master branch to use `basename $0`"
   exit 1
 fi
