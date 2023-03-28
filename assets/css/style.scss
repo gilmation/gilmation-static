@@ -285,6 +285,9 @@ a.pure-button-primary:hover {
 
 .work {
   margin-top: 2em;
+  .first {
+    margin-right: 1em;
+  }
 }
 
 /*
@@ -315,12 +318,6 @@ a.pure-button-primary:hover {
   .about {
     img {
       padding: 10px 0px 0px 20px;
-    }
-  }
-
-  .work-image {
-    img {
-      padding: 40px 0px 0px 5px;
     }
   }
 }
@@ -419,9 +416,6 @@ a.pure-button-primary:hover {
       max-width: 1224px;
       padding: 3% 0;
     }
-  }
-  .page-content{
-    max-width: 2048px;
   }
   body{
 

@@ -10,7 +10,7 @@ og_image: https://gilmation.com/images/gilmation-logo-no-phrase.png
 <div class="content-header"></div>
 <div class="pure-g page-content">
   <div class="pure-u-1 block">
-    <h2>Work</h2>
+    <h2>Projects</h2>
   </div>
 </div>
 {% include work.html %}
