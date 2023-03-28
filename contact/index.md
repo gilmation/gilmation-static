@@ -20,6 +20,6 @@ og_image: https://gilmation.com/images/gilmation-logo-no-phrase.png
   </div>
 </div>
 <div class="pure-g page-content bottom-of-page-padding">
-  <div class="pure-u-1 pure-u-lg-1-3 block">
+  <div class="pure-u-1 pure-u-lg-1-3 block contact">
   </div>
 </div>
